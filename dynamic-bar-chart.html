@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dynamic Bar Chart</title>
+    <link rel="stylesheet" type="text/css" href="./src/styles/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css">
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="chart col-sm-12"></div>
+        <div class="chart-svg col-sm-12"></div>
+    </div>
+    <div class="row" id="btn-div">
+        <h1>Let's check out how everyone did on the test!</h1>
+        <button onclick="render('math')">Math</button>
+        <button onclick="render('science')">Science</button>
+        <button onclick="render('language')">Language</button>
+    </div>
+</div>
+</body>
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script src="src/dynamicBarChart.js"></script>
+</html>
